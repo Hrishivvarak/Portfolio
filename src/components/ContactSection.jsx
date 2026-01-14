@@ -11,7 +11,6 @@ const ContactSection = ({ data, theme }) => (
       </p>
     </div>
 
-    {/* Info Grid - Larger Cards */}
     <div className="grid md:grid-cols-3 gap-8 mb-16">
       <div className={`p-8 rounded-3xl border text-center backdrop-blur-sm ${theme === 'dark' ? 'bg-gray-800/30 border-gray-700' : 'bg-white/50 border-gray-100 shadow-sm'}`}>
         <div className="w-14 h-14 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
@@ -36,7 +35,6 @@ const ContactSection = ({ data, theme }) => (
       </div>
     </div>
 
-    {/* Social Links Card - Larger buttons */}
     <div className={`p-12 rounded-3xl border backdrop-blur-sm flex flex-col items-center text-center ${theme === 'dark' ? 'bg-gray-800/30 border-gray-700' : 'bg-white/50 border-gray-200 shadow-xl'}`}>
       <h3 className={`text-3xl font-bold mb-10 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
         Connect & Collaborate

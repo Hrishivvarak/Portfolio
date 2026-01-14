@@ -13,28 +13,23 @@ const HeroSection = ({ theme }) => {
 
   return (
     <Section id="about">
-      {/* Larger badge */}
       <div className="inline-flex items-center self-start gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wide uppercase mb-8">
         <span className="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse" />
         Available for hire
       </div>
       
-      {/* Scaled up Headings */}
       <h1 className={`text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
         Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">{DATA.profile.name.split(' ')[0]}</span>.
       </h1>
       
-      {/* Larger Tagline */}
       <p className={`text-xl md:text-3xl max-w-3xl leading-relaxed mb-8 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
         {DATA.profile.tagline}
       </p>
       
-      {/* Larger Body Text */}
       <p className={`text-lg md:text-xl max-w-3xl leading-relaxed ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
         {DATA.profile.about}
       </p>
       
-      {/* Larger Buttons */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-10">
         <a
           href={DATA.profile.resumeUrl}

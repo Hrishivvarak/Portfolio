@@ -21,7 +21,6 @@ const Navbar = ({ theme, setTheme }) => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       theme === 'dark' ? 'bg-gray-950/80 backdrop-blur-md border-b border-gray-800' : 'bg-white/80 backdrop-blur-md border-b border-gray-100'
     }`}>
-      {/* Increased height to h-20 and max-width */}
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo - Increased text size */}
         <div 
@@ -33,8 +32,6 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
           <span className={`${theme === 'light' ? 'text-gray-900' : 'text-white'} text-xl`}>{DATA.profile.name}</span>
         </div>
-
-        {/* Desktop Nav - Increased text size to text-base */}
         <div className="hidden md:flex gap-10 text-base font-medium">
           {navLinks.map((link) => (
             <button key={link.name} onClick={() => scrollToSection(link.id)} className={`${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-500 hover:text-black'} transition-colors`}>
@@ -42,8 +39,6 @@ const Navbar = ({ theme, setTheme }) => {
             </button>
           ))}
         </div>
-
-        {/* Actions - Larger icons and buttons */}
         <div className="flex items-center gap-4">
           <button 
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
@@ -56,8 +51,6 @@ const Navbar = ({ theme, setTheme }) => {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className={`md:hidden absolute top-20 left-0 right-0 border-b p-6 shadow-xl ${theme === 'dark' ? 'bg-gray-950 border-gray-800' : 'bg-white border-gray-100'}`}>
           <div className="flex flex-col space-y-6">

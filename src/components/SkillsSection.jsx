@@ -4,8 +4,6 @@ import Section from './Section';
 import { DATA } from '../data/portfolioData';
 
 const SkillsSection = ({ theme }) => (
-  // Removed fullHeight={false} to make it bigger, or keep it if you want compact. 
-  // Let's keep fullHeight={false} but increase content size.
   <Section id="tech-stack" fullHeight={false}>
     <div className="w-full">
       <h2 className={`text-base font-bold uppercase tracking-widest mb-16 ${theme === 'dark' ? 'text-gray-500' : 'text-gray-400'}`}>Tech Stack</h2>
